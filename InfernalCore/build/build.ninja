@@ -73,6 +73,20 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_InfernalCore: phony || .
 
+build src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o: CXX_COMPILER__InfernalCore_unscanned_ /Users/maxwellyoung/c++-engine/InfernalCore/src/core/Game.cpp || cmake_object_order_depends_target_InfernalCore
+  DEP_FILE = src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o.d
+  FLAGS = -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0
+  INCLUDES = -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2
+  OBJECT_DIR = src/CMakeFiles/InfernalCore.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/InfernalCore.dir/core
+
+build src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o: CXX_COMPILER__InfernalCore_unscanned_ /Users/maxwellyoung/c++-engine/InfernalCore/src/core/Log.cpp || cmake_object_order_depends_target_InfernalCore
+  DEP_FILE = src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o.d
+  FLAGS = -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0
+  INCLUDES = -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2
+  OBJECT_DIR = src/CMakeFiles/InfernalCore.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/InfernalCore.dir/core
+
 build src/CMakeFiles/InfernalCore.dir/game/main.cpp.o: CXX_COMPILER__InfernalCore_unscanned_ /Users/maxwellyoung/c++-engine/InfernalCore/src/game/main.cpp || cmake_object_order_depends_target_InfernalCore
   DEP_FILE = src/CMakeFiles/InfernalCore.dir/game/main.cpp.o.d
   FLAGS = -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0
@@ -88,7 +102,7 @@ build src/CMakeFiles/InfernalCore.dir/game/main.cpp.o: CXX_COMPILER__InfernalCor
 #############################################
 # Link the executable src/InfernalCore
 
-build src/InfernalCore: CXX_EXECUTABLE_LINKER__InfernalCore_ src/CMakeFiles/InfernalCore.dir/game/main.cpp.o | /opt/homebrew/Cellar/sdl2/2.32.6/lib/libSDL2.dylib
+build src/InfernalCore: CXX_EXECUTABLE_LINKER__InfernalCore_ src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o src/CMakeFiles/InfernalCore.dir/game/main.cpp.o | /opt/homebrew/Cellar/sdl2/2.32.6/lib/libSDL2.dylib
   FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/sdl2/2.32.6/lib  /opt/homebrew/Cellar/sdl2/2.32.6/lib/libSDL2.dylib
   LINK_PATH = -L/opt/homebrew/Cellar/sdl2/2.32.6/lib

@@ -1,3 +1,7 @@
 # ninja log v6
-0	484	1750084241832318651	src/CMakeFiles/InfernalCore.dir/game/main.cpp.o	86030b0a0043b210
-486	514	1750084242318085093	src/InfernalCore	3dc4d6fa1e773679
+7	43	1750084570615662858	src/CMakeFiles/InfernalCore.dir/game/main.cpp.o	86030b0a0043b210
+474	504	1750084571083425263	src/InfernalCore	164c963c7bef6c61
+6	474	1750084570615206525	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	a85f9c74e8ee32f0
+17	419	1750084863433922082	src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o	ed37976be6d3ed76
+17	470	1750084863433606124	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	a85f9c74e8ee32f0
+471	503	1750084863887404532	src/InfernalCore	ffa185fe141d7a77
