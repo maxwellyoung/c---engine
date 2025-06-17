@@ -5,17 +5,36 @@ project(InfernalCore)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# --- Find Dependencies ---
-# We'll use SDL2 for windowing, rendering, and input
+# Find dependencies
 find_package(SDL2 REQUIRED)
 
-# --- Add Third-Party Libraries ---
+# Add third-party libraries
 add_subdirectory(vendor/nlohmann_json)
 
-# --- Add Subdirectories ---
-# This will keep our project modular.
-# Each subdirectory will have its own CMakeLists.txt
-add_subdirectory(src)
+# Define all source files explicitly
+set(SOURCES
+    "src/game/main.cpp"
+    "src/core/Game.cpp"
+    "src/core/Log.cpp"
+    "src/game/Level.cpp"
+    "src/entity/Player.cpp"
+    "src/entity/Enemy.cpp"
+    "src/input/Input.cpp"
+    "src/gfx/TextureManager.cpp"
+)
 
-# --- Executable ---
-# The main executable will be defined in src/CMakeLists.txt 
+# Define the executable
+add_executable(InfernalCore ${SOURCES})
+
+# Link libraries
+target_link_libraries(InfernalCore PRIVATE 
+    SDL2::SDL2
+    /opt/homebrew/lib/libSDL2_image.dylib
+    nlohmann_json::nlohmann_json
+)
+
+# Define include directories
+target_include_directories(InfernalCore PUBLIC
+    "${PROJECT_SOURCE_DIR}/include"
+    "/opt/homebrew/include"
+) 

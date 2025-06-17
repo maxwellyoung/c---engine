@@ -3,6 +3,7 @@
 #include "game/Level.h"
 #include "entity/Player.h"
 #include "input/Input.h"
+#include "gfx/TextureManager.h"
 #include <SDL2/SDL.h>
 #include <iostream>
 
@@ -30,6 +31,9 @@ Game::Game() : m_isRunning(false), m_pWindow(nullptr), m_pRenderer(nullptr), m_l
         SDL_Quit();
         return;
     }
+
+    // Initialize managers
+    TextureManager::getInstance().init(m_pRenderer);
 
     m_isRunning = true;
     m_lastTime = SDL_GetPerformanceCounter();
@@ -84,6 +88,9 @@ void Game::processEvents() {
 
 void Game::update() {
     // Game logic will go here, running at a fixed rate
+    if (m_pCurrentLevel) {
+        m_pCurrentLevel->update(1.0/60.0);
+    }
     if (m_pPlayer) {
         m_pPlayer->update(1.0/60.0); // Fixed delta time for now
     }
@@ -92,6 +99,11 @@ void Game::update() {
 void Game::render() {
     SDL_SetRenderDrawColor(m_pRenderer, 25, 20, 20, 255);
     SDL_RenderClear(m_pRenderer);
+
+    // Render the level
+    if (m_pCurrentLevel) {
+        m_pCurrentLevel->render(m_pRenderer);
+    }
 
     // Render the player
     if (m_pPlayer) {

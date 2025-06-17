@@ -1,9 +1,11 @@
 #include "entity/Player.h"
 #include "input/Input.h"
+#include "gfx/TextureManager.h"
+#include "game/Level.h"
 #include <SDL2/SDL.h>
 
-Player::Player() : m_speed(200.0f) {
-    // Player-specific initialization can go here
+Player::Player(Level* pLevel) : m_pLevel(pLevel), m_speed(200.0f), m_pTexture(nullptr) {
+    m_pTexture = TextureManager::getInstance().load("assets/sprites/player.png");
 }
 
 Player::~Player() {
@@ -34,18 +36,29 @@ void Player::update(double deltaTime) {
         velocity.y *= 0.7071f;
     }
 
-    m_position.x += velocity.x * m_speed * deltaTime;
-    m_position.y += velocity.y * m_speed * deltaTime;
+    float newX = m_position.x + velocity.x * m_speed * deltaTime;
+    float newY = m_position.y + velocity.y * m_speed * deltaTime;
+
+    SDL_Rect playerRect = { (int)newX, (int)m_position.y, 32, 32 };
+    if (!m_pLevel->isColliding(playerRect)) {
+        m_position.x = newX;
+    }
+
+    playerRect = { (int)m_position.x, (int)newY, 32, 32 };
+    if (!m_pLevel->isColliding(playerRect)) {
+        m_position.y = newY;
+    }
 }
 
 void Player::render(SDL_Renderer* renderer) {
-    SDL_Rect playerRect = {
+    if (!m_pTexture) return; // Don't render if texture failed to load
+
+    SDL_Rect destRect = {
         static_cast<int>(m_position.x),
         static_cast<int>(m_position.y),
         32, // width
         32  // height
     };
 
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White
-    SDL_RenderFillRect(renderer, &playerRect);
+    SDL_RenderCopy(renderer, m_pTexture, nullptr, &destRect);
 } 

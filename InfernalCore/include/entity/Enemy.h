@@ -6,16 +6,17 @@
 struct SDL_Texture;
 class Level;
 
-class Player : public Entity {
+class Enemy : public Entity {
 public:
-    Player(Level* pLevel);
-    ~Player();
+    Enemy(Level* pLevel);
+    ~Enemy();
 
     void update(double deltaTime) override;
     void render(SDL_Renderer* renderer) override;
 
 private:
-    float m_speed;
     SDL_Texture* m_pTexture;
     Level* m_pLevel;
+    int m_direction;
+    float m_speed;
 }; 

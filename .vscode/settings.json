@@ -1,3 +1,6 @@
 {
-  "cmake.sourceDirectory": "/Users/maxwellyoung/c++-engine/InfernalCore"
+  "cmake.sourceDirectory": "/Users/maxwellyoung/c++-engine/InfernalCore",
+  "files.associations": {
+    "string": "cpp"
+  }
 }

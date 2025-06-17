@@ -8,8 +8,7 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1,
-						2
+						1
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -17,7 +16,11 @@
 						"string" : "3.10"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "vendor/nlohmann_json",
@@ -29,21 +32,6 @@
 					"parentIndex" : 0,
 					"projectIndex" : 1,
 					"source" : "vendor/nlohmann_json"
-				},
-				{
-					"build" : "src",
-					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.10"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "src",
-					"targetIndexes" : 
-					[
-						0
-					]
 				}
 			],
 			"name" : "Debug",
@@ -56,8 +44,7 @@
 					],
 					"directoryIndexes" : 
 					[
-						0,
-						2
+						0
 					],
 					"name" : "InfernalCore",
 					"targetIndexes" : 
@@ -77,9 +64,9 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 2,
-					"id" : "InfernalCore::@145eef247bfb46b6828c",
-					"jsonFile" : "target-InfernalCore-Debug-d87856b3e623805f853d.json",
+					"directoryIndex" : 0,
+					"id" : "InfernalCore::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-InfernalCore-Debug-dd199595c0972f7f7761.json",
 					"name" : "InfernalCore",
 					"projectIndex" : 0
 				}
