@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/core/Game.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/core/Game.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o"
+},
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/core/Log.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/core/Log.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o"
+},
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/entity/Player.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/entity/Player.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/entity/Player.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/entity/Player.cpp.o"
+},
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/game/Level.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/game/Level.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/game/Level.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/game/Level.cpp.o"
+},
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/game/main.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/game/main.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/game/main.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/game/main.cpp.o"
+},
+{
+  "directory": "/Users/maxwellyoung/c++-engine/build",
+  "command": "/usr/bin/clang++ -I/Users/maxwellyoung/c++-engine/InfernalCore/src -I/Users/maxwellyoung/c++-engine/InfernalCore/include -I/opt/homebrew/Cellar/sdl2/2.32.6/include -I/Users/maxwellyoung/c++-engine/InfernalCore/vendor/nlohmann_json/include -isystem /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -o src/CMakeFiles/InfernalCore.dir/input/Input.cpp.o -c /Users/maxwellyoung/c++-engine/InfernalCore/src/input/Input.cpp",
+  "file": "/Users/maxwellyoung/c++-engine/InfernalCore/src/input/Input.cpp",
+  "output": "src/CMakeFiles/InfernalCore.dir/input/Input.cpp.o"
+}
+]

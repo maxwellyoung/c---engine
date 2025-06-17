@@ -1,7 +1,13 @@
 # ninja log v6
-7	43	1750084570615662858	src/CMakeFiles/InfernalCore.dir/game/main.cpp.o	86030b0a0043b210
-474	504	1750084571083425263	src/InfernalCore	164c963c7bef6c61
-6	474	1750084570615206525	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	a85f9c74e8ee32f0
-17	419	1750084863433922082	src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o	ed37976be6d3ed76
-17	470	1750084863433606124	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	a85f9c74e8ee32f0
-471	503	1750084863887404532	src/InfernalCore	ffa185fe141d7a77
+4	249	1750143717032218927	src/CMakeFiles/InfernalCore.dir/entity/Player.cpp.o	b48a7f10680059e
+5	267	1750143731913545940	src/CMakeFiles/InfernalCore.dir/game/main.cpp.o	ee22db985b119965
+726	823	1750143732633846283	src/InfernalCore	e2d94233f6fd422a
+5	353	1750143731913135020	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	1ee2196edb65bc3a
+1	47	1750145991946219030	build.ninja	8f8ce9dd4c0d7ea3
+5	725	1750143731913408189	src/CMakeFiles/InfernalCore.dir/game/Level.cpp.o	4faf3603fa2bbdc9
+322	2509	1750143266580445113	src/CMakeFiles/InfernalCore.dir/core/Log.cpp.o	c032b45b54ef2729
+6	379	1750145991980083234	src/CMakeFiles/InfernalCore.dir/input/Input.cpp.o	e33a320f507bfcc4
+6	392	1750145991979813775	src/CMakeFiles/InfernalCore.dir/entity/Player.cpp.o	b48a7f10680059e
+5	544	1750145991979458275	src/CMakeFiles/InfernalCore.dir/core/Game.cpp.o	1ee2196edb65bc3a
+6	958	1750145991979963734	src/CMakeFiles/InfernalCore.dir/game/Level.cpp.o	4faf3603fa2bbdc9
+958	1094	1750145992932622234	src/InfernalCore	1f96941be6d561ef

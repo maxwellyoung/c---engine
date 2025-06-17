@@ -1,5 +1,8 @@
 #include "core/Game.h"
 #include "core/Log.h"
+#include "game/Level.h"
+#include "entity/Player.h"
+#include "input/Input.h"
 #include <SDL2/SDL.h>
 #include <iostream>
 
@@ -30,6 +33,11 @@ Game::Game() : m_isRunning(false), m_pWindow(nullptr), m_pRenderer(nullptr), m_l
 
     m_isRunning = true;
     m_lastTime = SDL_GetPerformanceCounter();
+
+    // Load the initial level
+    m_pCurrentLevel = std::make_unique<Level>("assets/maps/level1.json");
+    m_pPlayer = m_pCurrentLevel->getPlayer();
+
     Log::info("Infernal Core engine started successfully.");
 }
 
@@ -64,16 +72,31 @@ void Game::processEvents() {
     while (SDL_PollEvent(&e)) {
         if (e.type == SDL_QUIT) {
             m_isRunning = false;
+        } else if (e.type == SDL_KEYDOWN) {
+            if (e.key.repeat == 0) {
+                Input::getInstance().onKeyDown(e.key.keysym.scancode);
+            }
+        } else if (e.type == SDL_KEYUP) {
+            Input::getInstance().onKeyUp(e.key.keysym.scancode);
         }
     }
 }
 
 void Game::update() {
     // Game logic will go here, running at a fixed rate
+    if (m_pPlayer) {
+        m_pPlayer->update(1.0/60.0); // Fixed delta time for now
+    }
 }
 
 void Game::render() {
     SDL_SetRenderDrawColor(m_pRenderer, 25, 20, 20, 255);
     SDL_RenderClear(m_pRenderer);
+
+    // Render the player
+    if (m_pPlayer) {
+        m_pPlayer->render(m_pRenderer);
+    }
+
     SDL_RenderPresent(m_pRenderer);
 } 

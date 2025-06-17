@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # We'll use SDL2 for windowing, rendering, and input
 find_package(SDL2 REQUIRED)
 
+# --- Add Third-Party Libraries ---
+add_subdirectory(vendor/nlohmann_json)
+
 # --- Add Subdirectories ---
 # This will keep our project modular.
 # Each subdirectory will have its own CMakeLists.txt

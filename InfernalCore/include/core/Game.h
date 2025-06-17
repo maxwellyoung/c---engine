@@ -1,9 +1,13 @@
 #pragma once
-#include <cstdint>
 
-// Forward declarations to avoid including SDL headers in our main header
+#include <cstdint>
+#include <memory>
+#include "game/Level.h"
+
+// Forward declarations
 struct SDL_Window;
 struct SDL_Renderer;
+class Player;
 
 class Game {
 public:
@@ -23,4 +27,7 @@ private:
 
     uint64_t m_lastTime;
     double m_accumulator;
+    
+    std::unique_ptr<Level> m_pCurrentLevel;
+    Player* m_pPlayer;
 }; 
